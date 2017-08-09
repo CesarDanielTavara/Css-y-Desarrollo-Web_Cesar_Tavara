@@ -13,7 +13,8 @@ body{
 	text-decoration: none;
 	margin-right: 10vw;
 	margin-left: 10vw;
-	min-width: 900px;
+	max-width: 900px;
+	width: 80vw;
 } 
 .cabecera{
 	margin-top:1vh;
@@ -25,6 +26,7 @@ body{
 	height: 15vh;
 	display: flex;
 	flex-wrap: nowrap;
+	width: 80vw;
 }
 .menu li{
 	font-size: 1.5em;
@@ -58,19 +60,20 @@ p{
 	display: flex;
 	text-align: center;
 	border: 1px;
+	width: 80vw
 }
 #imgprincipal{
 	background-color: #82c3a6;
-	width: 100%;
+	width: 80vw;
 	text-align: center;
 }
 #img2{
 	background-color: #d5c75f;
-	width: 50%;
+	width: 50vw;
 }
 #img3{
 	background-color: #d5c75f;
-	width: 50%;
+	width: 50vw;
 }
 #imgprincipal img{
 	position: relative;
@@ -78,16 +81,16 @@ p{
 	margin:auto;
 	padding-top: 20px;
 	padding-bottom: 20px; 
-	max-width: 90%;
+	max-width: 80%;
 }
 #img2 img{
-	max-width: 90%;
+	max-width: 70%;
 	margin: 30px 30px 30px 30px;
 	padding: 0;
 	border: black solid 2px;
 }
 #img3 img{
-	max-width: 90%;
+	max-width: 50%;
 	margin: 50px 20px 20px 20px;
 	padding: 0;
 	border: black solid 2px;
@@ -114,7 +117,7 @@ footer{
 	display: flex;
 	flex-wrap: nowrap;
 	float: left;
-	width: 100%;
+	width: 80vw;
 	border-radius: 0 0 10px 10px;
 	height: 5%;
 	margin-bottom: 2vh;
@@ -132,7 +135,7 @@ footer{
 .retrato img,.paisaje img{
 	margin-top: 5vh;
 	margin-bottom: 5vh;
-	width: 100%;
+	width: 90%;
 	position: relative;
 	border: black solid 2px;
 }
@@ -144,6 +147,7 @@ footer{
 	flex-wrap: wrap;
 	text-align: center;
 	background-color: #d5c75f;
+	width: 80vw;
 }
 #retrato1, #paisaje1{
 	filter: blur(10px);
@@ -173,15 +177,16 @@ header{
 
 @media screen and (max-width:900px) {
 	body{
-		margin:0 auto; 
-		width: 100%;
+		margin:0; 
+		width: 100vw;
 	}
 	.cabecera{
 		text-align: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		position: relative;
-		height: 20%;
+		height: 30vw;
+		width: 100vw;
 	}
 	.menu{
 		margin: 0 auto;
@@ -197,21 +202,24 @@ header{
 		text-align: center;
 	}
 	.menu li{
-		font-size:1.8em;
+		font-size:7vw;
 		text-decoration: none;
 	}
 	.titulo{
 		margin: 0 auto;
-		font-size: 3em;
+		font-size: 8vw;
 		float: left;
 		width: 100%;
 	}
 	#contenedor{
 		flex-direction: column;
 		flex-wrap: nowrap;
-		width: 100%;
 		position: relative;
 		text-align: center;
+		width: 100%;
+	}
+	#imgprincipal{
+		width: 100%;
 	}
 	#img2{
 		width: 100%;
@@ -232,13 +240,14 @@ header{
 		position: relative;
 		height: 20%;
 		text-align: left;
+		width: 100vw;
 
 	}
 	.final{
 		position: relative;
 		width: 80%;
 		margin: 0 auto;
-		font-size: 3em;
+		font-size: 8vw;
 	}
 	#galeria{
 		flex-direction: column;
@@ -249,5 +258,9 @@ header{
 		width: 80%;
 		position: relative;
 	}
-
+	.retrato img,.paisaje img{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 70%;
+}
 }
