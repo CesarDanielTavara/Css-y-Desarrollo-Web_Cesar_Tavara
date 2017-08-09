@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: DancingScript-Regular;
+	src:url(DancingScript-Regular.ttf);
+}
+body{
+	font-family: DancingScript-Regular;
+	background-color: #02010a;
+	text-decoration: none;
+	margin-right: 10vw;
+	margin-left: 10vw;
+	min-width: 900px;
+} 
+.cabecera{
+	margin-top:1vh;
+	background-color: #5b7989;
+	text-align: left;
+	color: white;
+	text-shadow: 2px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	height: 15vh;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.menu li{
+	font-size: 1.5em;
+	margin: 2px;
+	padding: 2px;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	float: left;
+	text-align: center;
+}
+p{
+	font-size: 2.5em;
+	font-style: bold;
+}
+.titulo{
+	font-size: 2.5em;
+	margin-top: 2vh;
+	margin-left: 1.5vw;
+	padding: 2px;
+	width: 50vw;
+	float: left
+}
+.menu ul{
+	float: right;
+	width: 20vw;
+	margin-top: 2.8vh;
+}
+#contenedor{
+	display: flex;
+	text-align: center;
+	border: 1px;
+}
+#imgprincipal{
+	background-color: #82c3a6;
+	width: 100%;
+	text-align: center;
+}
+#img2{
+	background-color: #d5c75f;
+	width: 50%;
+}
+#img3{
+	background-color: #d5c75f;
+	width: 50%;
+}
+#imgprincipal img{
+	position: relative;
+	display: inline-block;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	max-width: 90%;
+}
+#img2 img{
+	max-width: 90%;
+	margin: 30px 30px 30px 30px;
+	padding: 0;
+	border: black solid 2px;
+}
+#img3 img{
+	max-width: 90%;
+	margin: 50px 20px 20px 20px;
+	padding: 0;
+	border: black solid 2px;
+}
+#img2 img:hover{
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	box-shadow: #82c3a6 2px 2px;
+	-webkit-box-shadow: #82c3a6 2px;
+	-moz-box-shadow: #82c3a6 2px 2px;
+}
+#img3 img:hover{
+	transform: translate(20px,-5px);
+	-webkit-transform: translate(20px,-5px);
+	-moz-transform: translate(20px,-5px);
+	box-shadow: #82c3a6 2px 2px;
+	-webkit-box-shadow: #82c3a6 2px;
+	-moz-box-shadow: #82c3a6 2px 2px;
+}
+footer{
+	background-color: #C6d5c5;
+	text-decoration: none; 
+	display: flex;
+	flex-wrap: nowrap;
+	float: left;
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+	height: 5%;
+	margin-bottom: 2vh;
+}
+.final{
+	width: 20%;
+	text-decoration: none;
+	margin: 2vw 1vw 5vw 5vw;
+}
+#galeria article{
+	margin: 0 auto;
+	width: 30%;
+	position: relative;
+}
+.retrato img,.paisaje img{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 100%;
+	position: relative;
+	border: black solid 2px;
+}
+#galeria{
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	float: left;
+	flex-wrap: wrap;
+	text-align: center;
+	background-color: #d5c75f;
+}
+#retrato1, #paisaje1{
+	filter: blur(10px);
+}
+#retrato2,#retrato4,#retrato6,#paisaje2,#paisaje4,#paisaje6{
+	filter: grayscale(100%);
+}
+#retrato3,#paisaje3{
+	filter: sepia(90%);
+}
+header{
+	animation-duration: 1.5s;
+	animation-name: slidein;
+}
+@keyframes slidein{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+
+@media screen and (max-width:900px) {
+	body{
+		margin:0 auto; 
+		width: 100%;
+	}
+	.cabecera{
+		text-align: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		position: relative;
+		height: 20%;
+	}
+	.menu{
+		margin: 0 auto;
+		float: left;
+		text-align: center;
+		margin-top: 1vh;
+		position: relative;
+	}
+	.menu ul{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	.menu li{
+		font-size:1.8em;
+		text-decoration: none;
+	}
+	.titulo{
+		margin: 0 auto;
+		font-size: 3em;
+		float: left;
+		width: 100%;
+	}
+	#contenedor{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	#img2{
+		width: 100%;
+	}
+	#img3{
+		width: 100%;
+	}
+	#img2 img{
+		position: relative;
+		display: inline-block;
+	}
+	#img3 img{
+		position: relative;
+		display: inline-block;
+	}
+	footer{
+		flex-direction: column;
+		position: relative;
+		height: 20%;
+		text-align: left;
+
+	}
+	.final{
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		font-size: 3em;
+	}
+	#galeria{
+		flex-direction: column;
+		width: 100%;
+		display: block;
+	}
+	#galeria article{
+		width: 80%;
+		position: relative;
+	}
+
+}
